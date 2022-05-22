@@ -7,12 +7,126 @@
     <title>Dee</title>
     <link rel="stylesheet" href="./assets/output.css">
 </head>
-<body class="flex flex-col">
-    <div class="bg-black text-white">some text</div> 
-    <div class="bg-orange-700">Another text</div>
-    <div class="bg-blue-700 text-green-300">Another Wonderful text</div>
-    <div class="bg-red-400 text-orange-50">Yet another Wonderful text</div>
-    <div class="bg-green-900">This Div Tag has been added from windows</div>
-    <div class="bg-pink-500">Windows is slow at processing tailwind</div>
+<body class="">
+    <main class="text-white bg-orange-500">
+        <nav class="flex flex-row items-center px-24 justify-between h-24 fixed top-0 w-full">
+            <div id="logo" class=""><a href="#" class="">divine.dev</a></div>
+            <div class="">
+                <ul class="flex flex-row">
+                    <li class=" pl-14"><a class="" href="#projects">projects</a></li>
+                    <li class=" pl-14"><a class="" href="#">about</a></li>
+                    <li class=" pl-14"><a class="" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="about" class="px-24 h-auto">
+            <div class="flex flex-row">
+                <!--1st-half of about page-->
+                <div class="w-1/2 flex">
+                    <div class="bg-orange-400 pt-10">
+                        <h1 class="text-7xl font-bold pt-36">Divine</h1>
+                        <h2 class="text-6xl font-bold pb-7">Okafor-udah</h2>
+                        <h5 class="pt-3">//about me</h5>
+    
+                        <h4 class="py-3">Experienced Front-end Developer</h4>
+                        <p class="w-3/4 pt-2 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus ipsam officia nam eum itaque corrupti necessitatibus nobis modi. Minima esse inventore hic quia dolor magnam, repudiandae eaque. Expedita, magni!</p>
+                        <a href="#contact" class="block w-3/4 p-4 rounded-md border-2 border-white text-center mb-14">send me an email</a>
+                    </div>
+                    <div id="socials" class="flex flex-col justify-center items-end pt-36">
+                        <a href=""><div class="bg-white w-10 h-12 my-2">X</div></a>
+                        <a href=""><div class="bg-white w-10 h-12 my-2">X</div></a>
+                        <a href=""><div class="bg-white w-10 h-12 my-2">X</div></a>
+                    </div>
+                </div>
+                <!--2nd half of about page-->
+                <div class="w-1/2 flex flex-row justify-center items-center border-l-white border-l-2">
+                    <img src="" alt="developer" title="developer trinken kaffee">
+                </div>
+            </div>
+
+        </section>
+
+        <!--tech stack-->
+        <section class="bg-slate-900 h-36 w-full flex flex-row">
+            <div id="tech-stack-header" class="bg-gray-400 w-1/12 flex flex-col items-center justify-center text-2xl text-left"><span class="">Tech</span><span class="font-bold">Stack</span></div>
+            <div id="tech-stack" class="flex flex-row justify-around items-center text-white">
+                <div><img src="" alt="git"></div>
+                <div><img src="" alt="figma"></div>
+                <div><img src="" alt="tailwindcss"></div>
+                <div><img src="" alt="webflow"></div>
+            </div>
+        </section>
+
+        <!--contact page-->
+        <section id="contact" class="px-24 h-screen">
+            <div class="">
+                <h2 class="">get in touch</h2>
+                <span>A Landing Page? A Store Front? An eCommerce site?</span>
+                <span>Get in touch and together, we will bring that idea of yours to life!</span>
+            </div>
+            <div>
+                <div id="contact-details">
+                    <div>
+                        <h3>Contact Information</h3>
+                        <span>I will build high quality content. Reach out to me on any of these:</span>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href=""><img src="" alt="">okafor.udahdivine@gmail.com</a></li>
+                            <li><a href=""><img src="" alt="">+234 810 123 0271</a></li>
+                            <li><a href=""><img src="" alt="">Anambra, Nigeria</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="">
+                    <div>
+                        <label for="name">Full Name
+                            <input type="text" placeholder="John Doe" required>
+                        </label>
+                        <label for="email">Email
+                            <input type="text" placeholder="johndoe@protonmail.com" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="phone number">Phone Number
+                            <input type="tel" maxlength="14" placeholder="+2340123456789" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="subject">Subject
+                            <input type="text" maxlength="50" name="" id="" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="">Message</label>
+                        <textarea name="" id="" cols="" rows="" placeholder="write your message here" required></textarea>
+                    </div>
+                    <div>
+                        <button class="">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--projects page-->
+        <section id="projects" class="px-24 h-screen">
+            <div>
+                <h3>Projects</h3>
+                <span>Some of the best projects I have worked.</span>
+            </div>
+
+            <!--project cards-->
+            <div id="project-cards">
+                <a href="">
+                    <div>
+                        <img src="" alt="">
+                        <h3>Project Title</h3>
+                        <span>project details</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
