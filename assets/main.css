@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#figma_logo {
+    width: 30px;
+}
+
+#git_logo {
+    width: 80px;
+}
+
+#webflow_logo {
+    width: 120px
+}
+
+.project_external_link {
+    width: 15px;
+    
+}

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dee</title>
     <link rel="stylesheet" href="./assets/output.css">
+    <link rel="stylesheet" href="./assets/main.css">
 </head>
-<body class="">
-    <main class="text-white bg-orange-500">
-        <nav class="flex flex-row items-center px-24 justify-between h-24 fixed top-0 w-full">
+<body class="bg-orange-600">
+    <main class="text-white bg-orange-600">
+        <nav class="flex flex-row items-center px-40 justify-between h-24 fixed top-0 w-full text-xs">
             <div id="logo" class="uppercase"><a href="#" class="">divine.dev</a></div>
             <div class="capitalize">
                 <ul class="flex flex-row">
@@ -20,30 +21,32 @@
             </div>
         </nav>
 
-        <section id="about" class="px-24 h-auto">
+        <section id="about" class="px-40 h-auto">
             <div class="flex flex-row">
                 <!--1st-half of about page-->
                 <div class="w-1/2 flex">
-                    <div class="w-11/12 pt-10">
+                    <div class="w-full pt-10">
                         <div class="uppercase">
-                            <h1 class="text-8xl font-bold pt-36">Divine</h1>
+                            <h1 class="text-6xl font-bold pt-36">Divine</h1>
                             <h2 class="text-6xl font-bold pb-7">Okafor-udah</h2>
-                            <h5 class="pt-3 font-medium">//about me</h5>
+                            <h5 class=" text-xs pt-3 font-medium">//about me</h5>
                         </div>
     
                         <h4 class="py-3 uppercase font-bold">Experienced Front-end Developer</h4>
                         <p class="w-3/4 pt-2 pb-6 text-sm">I am Web Developer with specialization in implementing User Interfaces and User Experiences.<br> I am an Andela * Google * PluralSight benefactor.</p>
-                        <a href="#contact" class="block w-3/4 p-4 rounded-md border-2 border-white text-center mb-14">send me an email</a>
+                        <a href="#contact" class="flex flex-row justify-center w-3/4 p-4 rounded-xl border-2 border-white text-center mb-14">
+                            <span class="px-4 capitalize">send me an email</span><img src="assets/images/external-link 1.svg" alt="">
+                        </a>
                     </div>
-                    <div id="socials" class="flex-col justify-center pt-36 bg-red-100">
-                        <a href=""><div class="bg-white w-10 h-12 my-2">X</div></a>
-                        <a href=""><div class="bg-white w-10 h-12 my-2">X</div></a>
-                        <a href=""><div class="bg-white w-10 h-12 my-2">X</div></a>
+                    <div id="socials" class="flex flex-col justify-center pt-36">
+                        <a href=""><div class="bg-white w-9 h-12 my-2 pl-2 flex flex-row justify-center items-center"><img width="18px" src="./assets/images/github 1.svg" alt="" class="block"></div></a>
+                        <a href=""><div class="bg-white w-9 h-12 my-2 pl-2 flex flex-row justify-center items-center"><img width="18px" src="./assets/images/twitter 1.svg" alt="" class="block"></div></a>
+                        <a href=""><div class="bg-white w-9 h-12 my-2 pl-2 flex flex-row justify-center items-center"><img width="18px" src="./assets/images/linkedin 1.svg" alt="" class="block"></div></a>
                     </div>
                 </div>
                 <!--2nd half of about page-->
-                <div class="w-1/2 flex flex-row justify-center items-center border-l-white border-l-2">
-                    <img src="" alt="developer" title="developer trinken kaffee">
+                <div class="w-1/2 flex flex-row justify-center items-center border-l-white border-l-2 py-10 px-10">
+                    <img src="./assets/images/Rectangle.svg" alt="developer" title="developer trinken kaffee" class="hidden">
                 </div>
             </div>
 
@@ -51,82 +54,107 @@
 
         <!--tech stack-->
         <section class="bg-slate-900 h-36 w-full flex flex-row">
-            <div id="tech-stack-header" class="bg-gray-400 w-52 flex flex-col items-center justify-center text-2xl text-left"><span class="capitalize">Tech</span><span class="font-bold">Stack</span></div>
+            <div id="tech-stack-header" class="uppercase text-slate-900 bg-gray-400 w-52 flex flex-col items-center justify-center text-2xl text-left"><span class="">Tech</span><span class="font-bold">Stack</span></div>
             <div id="tech-stack" class="flex flex-row justify-evenly items-center text-white w-full">
-                <div class="w-24"><img src="" alt="git"></div>
-                <div class="w-24"><img src="" alt="figma"></div>
-                <div class="w-24"><img src="" alt="tailwindcss"></div>
-                <div class="w-24"><img src="" alt="webflow"></div>
-            </div>
-        </section>
-
-        <!--contact page-->
-        <section id="contact" class="px-24 h-screen">
-            <div class="">
-                <h2 class="">get in touch</h2>
-                <span>A Landing Page? A Store Front? An eCommerce site?</span>
-                <span>Get in touch and together, we will bring that idea of yours to life!</span>
-            </div>
-            <div>
-                <div id="contact-details">
-                    <div>
-                        <h3>Contact Information</h3>
-                        <span>I will build high quality content. Reach out to me on any of these:</span>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href=""><img src="" alt="">okafor.udahdivine@gmail.com</a></li>
-                            <li><a href=""><img src="" alt="">+234 810 123 0271</a></li>
-                            <li><a href=""><img src="" alt="">Anambra, Nigeria</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <form action="">
-                    <div>
-                        <label for="name">Full Name
-                            <input type="text" placeholder="John Doe" required>
-                        </label>
-                        <label for="email">Email
-                            <input type="text" placeholder="johndoe@protonmail.com" required>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="phone number">Phone Number
-                            <input type="tel" maxlength="14" placeholder="+2340123456789" required>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="subject">Subject
-                            <input type="text" maxlength="50" name="" id="" required>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="">Message</label>
-                        <textarea name="" id="" cols="" rows="" placeholder="write your message here" required></textarea>
-                    </div>
-                    <div>
-                        <button class="">Send Message</button>
-                    </div>
-                </form>
+                <img id="git_logo" class="" src="./assets/images/git-transparent 1.svg" alt="git">
+                <img id="figma_logo" class="" src="./assets/images/Figma-logo 1.svg" alt="figma">
+                <img id="tailwind_logo" class="w-64" src="./assets/images/tailwindcss-transparent 1.png" alt="tailwindcss">
+                <img id="webflow_logo" class="" src="./assets/images/webflow-transparent 1.svg" alt="webflow">
             </div>
         </section>
 
         <!--projects page-->
-        <section id="projects" class="px-24 h-screen">
-            <div>
-                <h3>Projects</h3>
-                <span>Some of the best projects I have worked.</span>
+        <section id="projects" class="px-40 pt-20 h-screen">
+            <div class="text-center">
+                <h3 class="capitalize font-bold text-4xl pb-2">Projects</h3>
+                <span>Some of the best projects I have worked on.</span>
             </div>
-
+            
             <!--project cards-->
-            <div id="project-cards">
-                <a href="">
-                    <div>
-                        <img src="" alt="">
-                        <h3>Project Title</h3>
-                        <span>project details</span>
+            <div id="project-cards" class="mt-16 flex flex-row flex-wrap justify-between px-32 bg-black">
+                <a href="#" class="block w-1/2 mt-5 mx-5">
+                    <div class="bg-white w-full rounded-xl px-10 pt-3 hover:drop-shadow-2xl transition-all duration-500">
+                        <div class="flex flex-row justify-end">
+                            <img src="assets/images/external-link 2.svg" alt="external-link" class="py-2 project_external_link">                            
+                        </div>
+                        <h3 class="text-orange-600 font-extrabold text-xl uppercase py-5">cn-maestro.com</h3>
+                        <hr class="">
+                        <span class="text-orange-600 py-4 pb-6 block text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit natus doloremque eveniet at vero aspernatur magni commodi totam! Adipisci labore aliquid repellat odio id. Quisquam porro ab quidem distinctio cumque.</span>
                     </div>
                 </a>
+
+                <a href="#" class="block w-1/2 mt-5 mx-5">
+                    <div class="bg-white w-full rounded-xl px-10 pt-3 hover:drop-shadow-2xl transition-all duration-500">
+                        <div class="flex flex-row justify-end">
+                            <img src="assets/images/external-link 2.svg" alt="external-link" class="py-2 project_external_link">                            
+                        </div>
+                        <h3 class="text-orange-600 font-extrabold text-xl uppercase py-5">cn-maestro.com</h3>
+                        <hr class="">
+                        <span class="text-orange-600 py-4 pb-6 block text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit natus doloremque eveniet at vero aspernatur magni commodi totam! Adipisci labore aliquid repellat odio id. Quisquam porro ab quidem distinctio cumque.</span>
+                    </div>
+                </a>
+
+                <a href="#" class="block w-1/3 mt-5 mx-5">
+                    <div class="bg-white w-full rounded-xl px-10 pt-3 hover:drop-shadow-2xl transition-all duration-500">
+                        <div class="flex flex-row justify-end">
+                            <img src="assets/images/external-link 2.svg" alt="external-link" class="py-2 project_external_link">                            
+                        </div>
+                        <h3 class="text-orange-600 font-extrabold text-xl uppercase py-5">cn-maestro.com</h3>
+                        <hr class="">
+                        <span class="text-orange-600 py-4 pb-6 block text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit natus doloremque eveniet at vero aspernatur magni commodi totam! Adipisci labore aliquid repellat odio id. Quisquam porro ab quidem distinctio cumque.</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <!--contact page-->
+        <section id="contact" class="px-24 h-screen pt-20">
+            <div class="text-center text-sm">
+                <h2 class="capitalize font-bold text-4xl pb-2">get in touch</h2>
+                <span>A Landing Page? A Store Front? An eCommerce site?</span><br />
+                <span>Get in touch and together, we will bring that idea of yours to life!</span>
+            </div>
+            <div class="bg-gray-50 mt-10 mx-16 pr-4 flex flex-row rounded-xl">
+                <div id="contact-details" class="bg-orange-600 m-4 w-1/3 px-10 pb-40 rounded-xl">
+                    <div class="mt-10">
+                        <h3 class="font-bold mb-2">Contact Information</h3>
+                        <span class="text-xs text-opacity-40">I will build high quality content.<br /> Reach out to me on any of these:</span>
+                    </div>
+                    <div class="text-xs">
+                        <ul>
+                            <li class="pt-10"><a href=""><img src="" alt="">okafor.udahdivine@gmail.com</a></li>
+                            <li class="pt-10"><a href=""><img src="" alt="">+234 810 123 0271</a></li>
+                            <li class="pt-10"><a href=""><img src="" alt="">Anambra, Nigeria</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="" class="mt-12 mx-12 w-3/4 text-sm text-slate-600">
+                    <div class="flex flex-row mb-5">
+                        <label for="name" class="text-gray-500 font-medium w-1/2 pr-10">Full Name <br>
+                            <input type="text" placeholder="John Doe" class="w-full bg-transparent border-b-2 border-b-gray-400 py-1" required>
+                        </label>
+                        <label for="email" class=" text-gray-500 font-medium w-1/2 pl-5">Email <br>
+                            <input type="text" placeholder="johndoe@protonmail.com" class="w-full bg-transparent border-b-2 border-b-gray-400 py-1" required>
+                        </label>
+                    </div>
+                    <div class="w-1/2 mb-5 pr-10">
+                        <label for="phone number" class="text-gray-500 font-medium">Phone Number
+                            <input type="tel" maxlength="14" placeholder="+2340123456789" class="block bg-transparent border-b-2 border-b-gray-400 py-1 w-full" required>
+                        </label>
+                    </div>
+                    <div class="mb-5">
+                        <label for="subject" class="text-gray-500 font-medium">Subject
+                            <input type="text" maxlength="50" name="" id="" class="block w-full bg-transparent border-b-2 border-b-gray-400 py-1" placeholder="I need a landing page for my business" required>
+                        </label>
+                    </div>
+                    <div class="mb-5 flex flex-col ">
+                        <label for="" class="text-gray-500 font-medium">Message</label>
+                        <textarea name="" id="" class="w-full bg-transparent border-b-2 border-b-gray-400 py-1 h-28 focus:border-b-orange-600" placeholder="write your message here" required></textarea>
+                    </div>
+                    <div class="mb-10">
+                        <button class="bg-orange-600 px-24 py-4 rounded-xl text-white">Send Message</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
