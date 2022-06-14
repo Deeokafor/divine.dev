@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700;800&family=Roboto&family=Roboto+Mono&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -8,6 +10,7 @@ html {
 
 #git_logo {
     width: 80px;
+    color: white;
 }
 
 #webflow_logo {
@@ -17,4 +20,17 @@ html {
 .project_external_link {
     width: 15px;
     
+}
+
+
+.dee-font-mono {
+    font-family: 'Roboto Mono';
+}
+
+.dee-font-primary {
+    font-family: Public Sans;
+}
+
+.dee-font-secondary {
+    font-family: Roboto;
 }
