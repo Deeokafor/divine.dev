@@ -14,7 +14,8 @@ module.exports = {
         'dee-text-primary': '#CCD6F6',
         'dee-text-secondary': '#8892B0',
         'dee-text-tertiary': '#79F4DB',
-        'dee-text-placeholder': '#C5EAE3'
+        'dee-text-placeholder': '#C5EAE3',
+        'dee-border-color': '#CCD6F6'
       },
       border: {
         'dee-border-color-main': '#0A192F'
