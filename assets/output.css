@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -558,6 +558,111 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.tw-mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.tw-block {
+  display: block;
+}
+
+.tw-flex {
+  display: flex;
+}
+
+.tw-hidden {
+  display: none;
+}
+
+.tw-h-screen {
+  height: 100vh;
+}
+
+.tw-h-full {
+  height: 100%;
+}
+
+.tw-h-96 {
+  height: 24rem;
+}
+
+.tw-h-8 {
+  height: 2rem;
+}
+
+.tw-h-16 {
+  height: 4rem;
+}
+
+.tw-h-24 {
+  height: 6rem;
+}
+
+.tw-h-4\/5 {
+  height: 80%;
+}
+
+.tw-h-1\/5 {
+  height: 20%;
+}
+
+.tw-h-5\/6 {
+  height: 83.333333%;
+}
+
+.tw-w-3\/5 {
+  width: 60%;
+}
+
+.tw-w-24 {
+  width: 6rem;
+}
+
+.tw-w-full {
+  width: 100%;
+}
+
+.tw-break-before-all {
+  -moz-column-break-before: all;
+       break-before: all;
+}
+
+.tw-flex-row {
+  flex-direction: row;
+}
+
+.tw-flex-col {
+  flex-direction: column;
+}
+
+.tw-items-end {
+  align-items: flex-end;
+}
+
+.tw-items-center {
+  align-items: center;
+}
+
+.tw-justify-between {
+  justify-content: space-between;
+}
+
+.tw-justify-around {
+  justify-content: space-around;
+}
+
+.tw-justify-evenly {
+  justify-content: space-evenly;
+}
+
+.tw-self-end {
+  align-self: flex-end;
+}
+
+.tw-break-words {
+  overflow-wrap: break-word;
+}
+
 .tw-bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -568,8 +673,92 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.tw-bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.tw-bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.tw-bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.tw-bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.tw-p-4 {
+  padding: 1rem;
+}
+
+.tw-p-6 {
+  padding: 1.5rem;
+}
+
+.tw-pl-6 {
+  padding-left: 1.5rem;
+}
+
+.tw-pt-6 {
+  padding-top: 1.5rem;
+}
+
+.tw-pr-6 {
+  padding-right: 1.5rem;
+}
+
+.tw-pb-9 {
+  padding-bottom: 2.25rem;
+}
+
+.tw-pb-96 {
+  padding-bottom: 24rem;
+}
+
+.tw-pb-48 {
+  padding-bottom: 12rem;
+}
+
+.tw-pb-32 {
+  padding-bottom: 8rem;
+}
+
+.tw-text-center {
+  text-align: center;
+}
+
 .tw-font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.tw-text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.tw-text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.tw-text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.tw-text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.tw-font-black {
+  font-weight: 900;
 }
 
 .tw-uppercase {

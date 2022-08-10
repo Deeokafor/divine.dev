@@ -8,64 +8,71 @@
     <link rel="stylesheet" href="./assets/output.css">
     <link rel="stylesheet" href="./assets/main.css">
 </head>
+<script src="/assets/script.js" defer></script>
+
 <body class="tw-bg-black tw-text-white">
     <main class="">
-        <nav class="tw-bg-white tw-text-black tw-font-mono">
-            <div class="tw-uppercase">divine.dev</div>
-            <div class="tw-capitalize">
-                <ul>
-                    <li>
-                        <div>about</div>
-                        <div class="nav_notifier"></div>
-                    </li>
-                    <li>
-                        <div>projects</div>
-                        <div class="nav_notifier"></div>
-                    </li>
-                    <li>
-                        <div>contact</div>
-                        <div class="nav_notifier"></div>
-                    </li>
-                </ul>
+        <nav class="tw-h-screen tw-flex tw-flex-row tw-justify-between tw-bg-white tw-text-black tw-font-mono tw-hidden">
+            <div class="tw-uppercase tw-w-1/5/5 tw-pl-6 tw-pt-6 tw-h-24">divine.dev</div>
+            <div class="tw-capitalize tw-w-3/5 tw-bg-black tw-text-white">
+                <div id="hamburger" class="tw-flex tw-flex-col tw-items-center tw-h-full tw-pb-32">
+                    <span class="tw-self-end tw-bg-black tw-block tw-h-24 tw-w-24 tw-text-center tw-pt-6 tw-pr-6">menu</span>
+                    <ul class="tw-flex tw-flex-col tw-justify-around tw-h-full tw-w-full tw-text-center">
+                        <li>
+                            <div>about</div>
+                            <div class="nav_notifier"></div>
+                        </li>
+                        <li>
+                            <div>projects</div>
+                            <div class="nav_notifier"></div>
+                        </li>
+                        <li>
+                            <div>contact</div>
+                            <div class="nav_notifier"></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <!--About-->
-        <section>
-            <div id="abouts">
+        <section class="tw-h-screen tw-flex tw-flex-col tw-justify-between">
+            <div id="abouts" class="tw-flex tw-flex-col tw-h-full">
                 <!--About Developer-->
-                <div>
-                    <p>---> Hi, My name is</p>
-                    <h1>Divine</h1>
-                    <h2>Okafor-udah</h2>
-                    <div>I am a Web Developer with specialization in crafting front-end User Interfaces & Experiences to the finest pixels. <br > I am proficient in Tailwindcss, Webflow, & Figma</div>
+                <!--Use tw-padding-4 for generic offset from viewport border-->
+                <div class="tw-flex tw-flex-col tw-justify-evenly tw-h-5/6 tw-mb-10 tw-p-4">
+                    <p class="letter">Hi, My name is</p>
+                    <h1 class="tw-text-5xl tw-font-black">Divine <br > Okafor-udah</h1>
+                    <!--<h2 class="tw-text-5xl tw-font-black">Okafor-udah</h2>-->
+                    <div class="">I am a Web Developer with specialization in crafting front-end User Interfaces {&&} Experiences to the finest pixels. <br > I am proficient in Tailwindcss, Webflow, & Figma</div>
                     <a href="#contact">Get In Touch!</a>
                 </div>
-
-                <div id="avatar">
-                    <img id="avatar_image" src="" alt="">
+                <!--
+                <div id="avatar" class="tw-hidden">
+                    <img id="avatar_image" src="assets/images/dots.svg" alt="">
                 </div>
-            </div>
+            </div>-->
             
             <!--Tech Stack-->
-            <div id="tech_stack">
+            <div id="tech_stack" class="tw-bg-white">
                 <div id="tech_stack_title">
                     <span>Tech</span>
                     <br >
                     <span>Stack</span>
                 </div>
 
+                <!--Tech Stack Icons-->
                 <div id="tech_stack_icons">
-                    <img src="" alt="Git">
-                    <img src="" alt="Figma">
-                    <img src="" alt="Tailwindcss">
-                    <img src="" alt="Webflow">
+                    <img src="assets/images/git_logo.svg" alt="Git">
+                    <img src="assets/images/figma_logo.svg" alt="Figma">
+                    <img src="assets/images/tailwindcss-logotype.svg" alt="Tailwindcss">
+                    <img src="assets/images/webflow_logo.svg" alt="Webflow">  
                 </div>
             </div>
         </section>
 
         <!--Projects-->
-        <section>
+        <section class="tw-h-screen">
             <div>
                 <h2 id="project_page_title">Projects</h2>
                 <p id="project_page_description">
@@ -94,7 +101,7 @@
         </section>
 
         <!--Contact-->
-        <section>
+        <section class="tw-h-screen">
             <div id="contact_page_header">
                 <h2 id="contact_page_title">Get In Touch</h2>
                 <p id="contact_page_description">
