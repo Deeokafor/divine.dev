@@ -709,6 +709,14 @@ video {
   height: 400px;
 }
 
+.tw-h-\[380px\] {
+  height: 380px;
+}
+
+.tw-h-\[390px\] {
+  height: 390px;
+}
+
 .tw-min-h-screen {
   min-height: 100vh;
 }
