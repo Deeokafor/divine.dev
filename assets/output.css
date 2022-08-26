@@ -865,6 +865,16 @@ video {
   line-height: 1rem;
 }
 
+.tw-text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.tw-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .tw-font-black {
   font-weight: 900;
 }
@@ -917,6 +927,14 @@ video {
   line-height: 1.25;
 }
 
+.tw-leading-6 {
+  line-height: 1.5rem;
+}
+
+.tw-leading-none {
+  line-height: 1;
+}
+
 .tw-text-dee-text-primary {
   --tw-text-opacity: 1;
   color: rgb(204 214 246 / var(--tw-text-opacity));
@@ -935,6 +953,23 @@ video {
 .tw-text-dee-text-secondary {
   --tw-text-opacity: 1;
   color: rgb(136 146 176 / var(--tw-text-opacity));
+}
+
+.tw-underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.tw-underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
+.tw-underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+.tw-underline-offset-8 {
+  text-underline-offset: 8px;
 }
 
 .tw-shadow-xl {
