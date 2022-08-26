@@ -16,7 +16,7 @@
         <nav class="tw-fixed tw-top-0 tw-w-full tw-h-[80px] tw-flex tw-flex-row tw-justify-between tw-text-dee-text-tertiary tw-backdrop-blur-3xl tw-bg-dee-background-primary/70 tw-shadow-xl tw-px-6 tw-uppercase tw-cursor-pointer dee-font-mono">
             <div class="tw-flex tw-flex-row tw-justify-between tw-items-center tw-w-full">
                 <div id="logo" class="">divine.dev</div>
-                <div id="logo" class=""><img src="assets/images/menu.svg" alt="" srcset=""></div>
+                <div id="menu_open" class=""><img src="assets/images/menu.svg" alt="" srcset=""></div>
             </div>
             <!--Large screen menu-->
             <div class="tw-hidden tw-absolute tw-left-0 tw-top-[80px] tw-h-screen tw-w-full tw-backdrop-blur-[9px] tw-bg-dee-background-primary/10">
@@ -38,9 +38,9 @@
 
 
             <!--Mobile menu-->
-            <div class=" tw-absolute tw-left-0 tw-h-screen tw-w-full tw-backdrop-blur-[9px] tw-bg-dee-background-primary/10 tw-flex tw-justify-end tw-capitalize">
-                <ul class="tw-flex tw-flex-col tw-justify-evenly tw-items-center tw-bg-dee-background-secondary tw-w-4/5 tw-h-full tw-pb-32 tw-text-dee-text-primary">
-                    <li><img src="assets/images/close.svg" alt="" class="tw-justify-self-end tw-self-start"></li>
+            <div id="mobile_navbar" class="tw-hidden tw-absolute tw-left-0 tw-h-screen tw-w-full tw-backdrop-blur-[9px] tw-bg-dee-background-primary/10 tw-flex tw-justify-end tw-capitalize">
+                <ul class="tw-flex tw-flex-col tw-justify-evenly tw-items-center tw-bg-dee-background-secondary tw-w-4/5 tw-h-full tw-pb-32 tw-text-dee-text-primary tw-z-40s">
+                    <li class="" id="menu_close"><img src="assets/images/close.svg" alt="" class=""></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#about">projects</a></li>
                     <li><a href="#about" class="tw-border-dee-text-tertiary tw-border tw-px-10 tw-py-4 tw-rounded-dee-radius-6 tw-text-dee-text-tertiary hover:tw-bg-dee-text-tertiary/10">contact</a></li>
@@ -214,7 +214,7 @@
                     <img src="assets/images/github 1.svg" alt="github">
                 </div>
                 <div id="author" class="tw-text-center tw-py-7 tw-my-16 tw-border-y-2">
-                    WebByOuda 2022<sup>&copy;</sup> 
+                    WebByOuda 2022 &copy;
                 </div>
                 <div id="inspiration" class="tw-flex tw-flex-row tw-items-center tw-justify-around">
                     <a href="https://brittanychiang.com/" class="tw-order-3">
