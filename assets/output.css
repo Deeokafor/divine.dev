@@ -634,6 +634,10 @@ video {
   margin-bottom: -2em;
 }
 
+.tw-mt-2 {
+  margin-top: 0.5rem;
+}
+
 .tw-flex {
   display: flex;
 }
@@ -678,8 +682,16 @@ video {
   width: 66.666667%;
 }
 
+.tw-w-4\/5 {
+  width: 80%;
+}
+
 .tw-cursor-pointer {
   cursor: pointer;
+}
+
+.tw-list-decimal {
+  list-style-type: decimal;
 }
 
 .tw-flex-row {
@@ -688,6 +700,10 @@ video {
 
 .tw-flex-col {
   flex-direction: column;
+}
+
+.tw-items-start {
+  align-items: flex-start;
 }
 
 .tw-items-center {
@@ -712,6 +728,22 @@ video {
 
 .tw-justify-evenly {
   justify-content: space-evenly;
+}
+
+.tw-self-start {
+  align-self: flex-start;
+}
+
+.tw-justify-self-start {
+  justify-self: start;
+}
+
+.tw-justify-self-end {
+  justify-self: end;
+}
+
+.tw-break-all {
+  word-break: break-all;
 }
 
 .tw-rounded-sm {
@@ -783,8 +815,17 @@ video {
   background-color: transparent;
 }
 
+.tw-bg-dee-background-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 34 64 / var(--tw-bg-opacity));
+}
+
 .tw-p-4 {
   padding: 1rem;
+}
+
+.tw-p-6 {
+  padding: 1.5rem;
 }
 
 .tw-px-6 {
@@ -825,6 +866,11 @@ video {
 .tw-py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.tw-px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .tw-pb-32 {
@@ -1000,4 +1046,12 @@ video {
   --tw-backdrop-blur: blur(9px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.hover\:tw-bg-dee-text-tertiary\/30:hover {
+  background-color: rgb(121 244 219 / 0.3);
+}
+
+.hover\:tw-bg-dee-text-tertiary\/10:hover {
+  background-color: rgb(121 244 219 / 0.1);
 }
