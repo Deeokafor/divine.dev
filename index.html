@@ -16,7 +16,7 @@
         <nav class="tw-fixed tw-top-0 tw-w-full tw-h-[80px] tw-flex tw-flex-row tw-justify-between tw-text-dee-text-tertiary tw-backdrop-blur-3xl tw-bg-dee-background-primary/70 tw-shadow-xl tw-px-6 tw-uppercase tw-cursor-pointer dee-font-mono">
             <div class="tw-flex tw-flex-row tw-justify-between tw-items-center tw-w-full">
                 <div id="logo" class="">divine.dev</div>
-                <div id="menu_open" class=""><img src="assets/images/menu.svg" alt="" srcset=""></div>
+                <div id="menu_open" class=""><img src="assets/images/menu.svg" alt="" srcset="" class="tw-p-4"></div>
             </div>
             <!--Large screen menu-->
             <div class="tw-hidden tw-absolute tw-left-0 tw-top-[80px] tw-h-screen tw-w-full tw-backdrop-blur-[9px] tw-bg-dee-background-primary/10">
@@ -40,7 +40,7 @@
             <!--Mobile menu-->
             <div id="mobile_navbar" class="tw-hidden tw-absolute tw-left-0 tw-h-screen tw-w-full tw-backdrop-blur-[9px] tw-bg-dee-background-primary/10 tw-flex tw-justify-end tw-capitalize">
                 <ul class="tw-flex tw-flex-col tw-justify-evenly tw-items-center tw-bg-dee-background-secondary tw-w-4/5 tw-h-full tw-pb-32 tw-text-dee-text-primary tw-z-40s">
-                    <li class="" id="menu_close"><img src="assets/images/close.svg" alt="" class=""></li>
+                    <li class="tw-p-4" id="menu_close"><img src="assets/images/close.svg" alt="" class=""></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#about">projects</a></li>
                     <li><a href="#about" class="tw-border-dee-text-tertiary tw-border tw-px-10 tw-py-4 tw-rounded-dee-radius-6 tw-text-dee-text-tertiary hover:tw-bg-dee-text-tertiary/10">contact</a></li>
@@ -90,55 +90,33 @@
         <!--Projects-->
         <section class="tw-min-h-screen">
             <div class="tw-px-6">
-                <h2 id="project_page_title" class="tw-text-4xl tw-font-extrabold tw-text-center">Projects</h2>
-                <p id="project_page_description" class="tw-text-center tw-font-medium tw-text-sm tw-mt-3">
-                    Some of the best projects I have worked on.
+                <h2 id="project_page_title" class="tw-text-4xl tw-font-extrabold tw-text-center tw-text-dee-text-tertiary dee-font-primary">Projects</h2>
+                <p id="project_page_description" class="tw-text-center tw-font-medium tw-text-sm tw-mt-3 tw-mb-12">
+                    Some of my noteworthy projects.
                 </p>
             </div>
 
             <!--Projects grid-->
-            <div class="tw-p-4">
-                <div class="tw-h-[390px] tw-bg-gray-700 tw-mb-10">
+            <div class="tw-px-6">
+                <div class="tw-h-[350px] tw-bg-dee-background-secondary tw-mb-10 tw-rounded-dee-radius-6">
                     <div id="project_header" class="tw-flex tw-justify-between">
-                        <div id="project_first_letter" class="tw-bg-white tw-px-8 tw-py-6">C</div>
-                        <div id="project_external_link" class="tw-px-8 tw-py-6"><img src="assets/images/external-link.svg" alt="" srcset=""></div>
+                        <div id="project_first_letter" class="tw-bg-dee-text-tertiary tw-px-6 tw-py-4 tw-rounded-tl-dee-radius-6 tw-text-3xl tw-text-dee-background-primary tw-font-black dee-font-primary">C</div>
+                        <a id="project_external_link" class="tw-px-8 tw-py-6"><img src="assets/images/external-link.svg" alt="" srcset=""></a>
                     </div>
-                    <div id="project_body" class="tw-px-4 tw-py-4">
-                        <div id="project_name" class="tw-text-2xl tw-font-extrabold tw-my-3">cn-maestro.com</div>
-                        <div id="project_description" class="tw-text-sm">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quidem vel quae asperiores officiis quia, facere, explicabo nostrum delectus ipsam sit officia? Consectetur, itaque placeat. Eligendi animi tenetur rerum aspernatur?
+                    <div id="project_body" class="tw-px-6 tw-py-4">
+                        <div id="project_name" class="tw-text-2xl tw-font-extrabold tw-my-3 dee-font-primary">cn-maestro.com</div>
+                        <div id="project_description" class="tw-text-sm tw-text-dee-text-secondary/90 tw-font-medium">
+                            The Cn-maestro Business sells studio-grade musical equipment and accompaniments.<br > Their website (partial e-Commerce) is the gateway to the best grade of musical equipment your money’s worth can buy.
                         </div>
                     </div>
-                    <div id="project_build_tools" class="tw-px-4 tw-py-4 tw-text-xs">PHP  JAVASCRIPT  HTML5  CSS3</div>
+                    <div id="project_build_tools" class="tw-px-6 tw-py-4 tw-text-xs ">
+                        PHP  JAVASCRIPT  HTML5  CSS3
+                    </div>
+
+                    
                 </div>
-                <div>
-                    <div class="tw-h-[390px] tw-bg-gray-700 tw-mb-10">
-                        <div id="project_header" class="tw-flex tw-justify-between">
-                            <div id="project_first_letter" class="tw-bg-white tw-px-8 tw-py-6">C</div>
-                            <div id="project_external_link" class="tw-px-8 tw-py-6"><img src="assets/images/external-link.svg" alt="" srcset=""></div>
-                        </div>
-                        <div id="project_body" class="tw-px-4 tw-py-4">
-                            <div id="project_name" class="tw-text-2xl tw-font-extrabold tw-my-3">cn-maestro.com</div>
-                            <div id="project_description" class="tw-text-sm">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quidem vel quae asperiores officiis quia, facere, explicabo nostrum delectus ipsam sit officia? Consectetur, itaque placeat. Eligendi animi tenetur rerum aspernatur?
-                            </div>
-                        </div>
-                        <div id="project_build_tools" class="tw-px-4 tw-py-4 tw-text-xs">PHP  JAVASCRIPT  HTML5  CSS3</div>
-                    </div>
-                </div>
-                <div><div class="tw-h-[390px] tw-bg-gray-700 tw-mb-10">
-                    <div id="project_header" class="tw-flex tw-justify-between">
-                        <div id="project_first_letter" class="tw-bg-white tw-px-8 tw-py-6">C</div>
-                        <div id="project_external_link" class="tw-px-8 tw-py-6"><img src="assets/images/external-link.svg" alt="" srcset=""></div>
-                    </div>
-                    <div id="project_body" class="tw-px-4 tw-py-4">
-                        <div id="project_name" class="tw-text-2xl tw-font-extrabold tw-my-3">cn-maestro.com</div>
-                        <div id="project_description" class="tw-text-sm">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quidem vel quae asperiores officiis quia, facere, explicabo nostrum delectus ipsam sit officia? Consectetur, itaque placeat. Eligendi animi tenetur rerum aspernatur?
-                        </div>
-                    </div>
-                    <div id="project_build_tools" class="tw-px-4 tw-py-4 tw-text-xs">PHP  JAVASCRIPT  HTML5  CSS3</div>
-                </div></div>
+                
+                
             </div>
         </section>
 
