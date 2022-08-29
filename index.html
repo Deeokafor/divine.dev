@@ -13,7 +13,7 @@
 
 <body class="tw-bg-dee-background-primary tw-text-dee-text-primary">
     <main class="">
-        <nav class="tw-fixed tw-top-0 tw-w-full tw-h-[80px] tw-flex tw-flex-row tw-justify-between tw-text-dee-text-tertiary tw-backdrop-blur-md tw-bg-dee-background-primary/70 tw-shadow-xl tw-px-6 tw-uppercase tw-cursor-pointer dee-font-mono">
+        <nav class="tw-fixed tw-top-0 tw-w-full tw-h-[80px] tw-flex tw-flex-row tw-justify-between tw-text-dee-text-tertiary tw-backdrop-blur-md tw-bg-dee-background-primary/70 tw-border-b-[0.2px] tw-border-dee-text-secondary/10 tw-px-6 tw-uppercase tw-cursor-pointer dee-font-mono">
             <div class="tw-flex tw-flex-row tw-justify-between tw-items-center tw-w-full">
                 <div id="logo" class="">divine.dev</div>
                 <div id="menu_open" class=""><img src="assets/images/menu.svg" alt="" srcset="" class="tw-p-4"></div>
@@ -38,7 +38,7 @@
 
 
             <!--Mobile menu-->
-            <div id="mobile_navbar" class="tw-hidde tw-absolute tw-left-0 tw-h-screen tw-w-full tw-backdrop-blur-[9px] tw-bg-dee-background-primary/10 tw-flex tw-justify-end tw-capitalize">
+            <div id="mobile_navbar" class="tw-hidden tw-absolute tw-left-0 tw-h-screen tw-w-full tw-backdrop-blur-[9px] tw-bg-dee-background-primary/10 tw-flex tw-justify-end tw-capitalize">
                 <ul class="tw-flex tw-flex-col tw-justify-evenly tw-items-center tw-bg-dee-background-secondary tw-w-4/5 tw-h-full tw-pb-32 tw-text-dee-text-primary tw-z-40s">
                     <li class="tw-p-4" id="menu_close"><img src="assets/images/close.svg" alt="" class=""></li>
                     <li><a href="#about">about</a></li>
@@ -62,7 +62,7 @@
                         I am proficient in <span class="tw-text-dee-text-tertiary">Tailwindcss, Webflow, Figma, & Javascript</span>.
                         I am a beneficiary of the Andela Learning Community 4.0, Google Africa Developer Scholarship (GADS 2020) and certified a Mobile Web Specialist. I am very active in the Google Developer Group (GDG) in my locale of Onitsha, Anambra, Nigeria. You can check out my certifications <a href="#" class="tw-text-dee-text-tertiary tw-underline  tw-underline-offset-4">here</a>.
                     </div>
-                    <a href="#contact" class="tw-flex tw-justify-center tw-px-4 tw-py-4 tw-mt-3 tw-w-2/3 tw-text-center tw-border-2 tw-border-dee-text-tertiary tw-text-dee-text-tertiary tw-rounded-dee-radius-6">Get In Touch! <img src="assets/images/hand_shake.svg" alt="" srcset="" class="tw-px-4"></a>
+                    <a href="#contact" class="tw-flex tw-justify-center tw-px-4 tw-py-4 tw-mt-3 tw-w-3/4 tw-text-center tw-border-2 tw-border-dee-text-tertiary tw-text-dee-text-tertiary tw-rounded-dee-radius-6 dee-font-mono">Get In Touch! <img src="assets/images/hand_shake.svg" width="26%" alt="" srcset="" class="tw-px-4"></a>
                 </div>
                 
                 <div id="avatar" class="tw-hidden">
@@ -98,25 +98,41 @@
 
             <!--Projects grid-->
             <div class="tw-px-6">
-                <div class="tw-h-[350px] tw-bg-dee-background-secondary tw-mb-10 tw-rounded-dee-radius-6">
+                <div class="tw-h-[350px] tw-bg-dee-background-secondary tw-rounded-dee-radius-6 tw-mb-20">
                     <div id="project_header" class="tw-flex tw-justify-between">
-                        <div id="project_first_letter" class="tw-bg-dee-text-tertiary tw-px-6 tw-py-4 tw-rounded-tl-dee-radius-6 tw-text-3xl tw-text-dee-background-primary tw-font-black dee-font-primary">C</div>
+                        <div id="project_first_letter" class="tw-bg-dee-text-tertiary/20 tw-px-6 tw-py-4 tw-rounded-tl-dee-radius-6 tw-rounded-br-dee-radius-6 tw-text-3xl tw-text-dee-text-tertiary tw-font-black dee-font-primary tw-uppercase">C</div>
                         <a id="project_external_link" class="tw-px-8 tw-py-6"><img src="assets/images/external-link.svg" alt="" srcset=""></a>
                     </div>
-                    <div id="project_body" class="tw-px-6 tw-py-4">
-                        <div id="project_name" class="tw-text-2xl tw-font-extrabold tw-my-3 dee-font-primary">cn-maestro.com</div>
-                        <div id="project_description" class="tw-text-sm tw-text-dee-text-secondary/90 tw-font-medium">
-                            The Cn-maestro Business sells studio-grade musical equipment and accompaniments.<br > Their website (partial e-Commerce) is the gateway to the best grade of musical equipment your money’s worth can buy.
+                    <div id="project_body" class="tw-flex tw-flex-col tw-justify-around tw-p-6 tw-h-[274px]">
+                        <div id="project_name" class="tw-text-2xl tw-font-extrabold dee-font-primary">cn-maestro.com</div>
+                        <div id="project_description" class="tw-text-sm tw-text-dee-text-primary/80 tw-leading-6">
+                            The cn-maestro <span class="tw-text-dee-text-tertiary tw-underline tw-underline-offset-4">e-commerce</span> Business sells studio-grade musical equipment and accompaniments. They are  the gateway to the best grade of musical equipment your money’s worth can buy.
                         </div>
-                    </div>
-                    <div id="project_build_tools" class="tw-px-6 tw-py-4 tw-text-xs ">
-                        PHP  JAVASCRIPT  HTML5  CSS3
-                    </div>
-
-                    
+                        <ul id="project_build_tools" class="tw-flex tw-text-xs tw-capitalize dee-font-mono tw-opacity-60">
+                            <li class="tw-pr-2">php</li>
+                            <li class="tw-pr-2">javascript</li>
+                            
+                        </ul>
+                    </div>                    
                 </div>
                 
-                
+                <div class="tw-h-[350px] tw-bg-dee-background-secondary tw-rounded-dee-radius-6 tw-mb-20">
+                    <div id="project_header" class="tw-flex tw-justify-between">
+                        <div id="project_first_letter" class="tw-bg-dee-text-tertiary/20 tw-px-6 tw-py-4 tw-rounded-tl-dee-radius-6 tw-rounded-br-dee-radius-6 tw-text-3xl tw-text-dee-text-tertiary tw-font-black dee-font-primary tw-uppercase">b</div>
+                        <a id="project_external_link" class="tw-px-8 tw-py-6"><img src="assets/images/external-link.svg" alt="" srcset=""></a>
+                    </div>
+                    <div id="project_body" class="tw-flex tw-flex-col tw-justify-around tw-p-6 tw-h-[274px]">
+                        <div id="project_name" class="tw-text-2xl tw-font-extrabold dee-font-primary">bluvardink.com.ng</div>
+                        <div id="project_description" class="tw-text-sm tw-text-dee-text-primary/80 tw-leading-6">
+                            Bluvardink <span class="tw-text-dee-text-tertiary tw-underline tw-underline-offset-4">EdTech</span> organization is committed to bringing education to the remotest parts of Africa to students to students in dire need of an education. 
+                        </div>
+                        <ul id="project_build_tools" class="tw-flex tw-text-xs tw-capitalize dee-font-mono tw-opacity-60">
+                            <li class="tw-pr-2">Tailwindcss</li>
+                            <li class="tw-pr-2">javascript</li>
+                            
+                        </ul>
+                    </div>                    
+                </div>
             </div>
         </section>
 
@@ -166,32 +182,32 @@
                 <!--Form-->
                 <form class="tw-flex tw-flex-col tw-items-center">
                     <div id="name_email_div" class="tw-capitalize">
-                        <label for="fullname"> name
-                            <input type="text" name="fullname" id="fullname" placeholder="John Okafor" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-mb-5 tw-text-sm">
+                        <label for="fullname" class="tw-text-dee-text-tertiary"> name
+                            <input type="text" name="fullname" id="fullname" placeholder="John Okafor" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder">
                         </label>
-                        <label for="email"> email
-                            <input type="email" name="email" id="email" placeholder="johnokafor@protonmail.com" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-mb-5 tw-text-sm">
+                        <label for="email" class="tw-text-dee-text-tertiary"> email
+                            <input type="email" name="email" id="email" placeholder="johnokafor@protonmail.com" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder">
                         </label>
                     </div>
-                    <label for="phonenumber" class="tw-w-full"> phone number
-                        <input type="tel" name="phonenumber" id="phonenumber" placeholder="+234-123-456-789" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-mb-5 tw-text-sm">
+                    <label for="phonenumber" class="tw-w-full tw-text-dee-text-tertiary"> phone number
+                        <input type="tel" name="phonenumber" id="phonenumber" placeholder="+234-123-456-789" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder">
                     </label>
-                    <label for="" class="tw-w-full"> Subject
-                        <input type="text" name="" id="" placeholder="I want a landing page" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-mb-5 tw-text-sm">
+                    <label for="" class="tw-w-full tw-text-dee-text-tertiary"> Subject
+                        <input type="text" name="" id="" placeholder="I want a landing page" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder">
                     </label>
-                    <label for="" class="tw-capitalize tw-w-full"> message
-                        <textarea name="" id="" cols="" rows="10" placeholder="your message" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-mb-10 tw-text-sm"></textarea>
+                    <label for="" class="tw-capitalize tw-w-full tw-text-dee-text-tertiary"> message
+                        <textarea name="" id="" cols="" rows="10" placeholder="your message" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-10 tw-text-sm tw-placeholder-dee-text-placeholder"></textarea>
                     </label>
-                    <button class=" tw-outline tw-outline-offset-4 tw-p-4 tw-mt-3 tw-w-2/3 tw-text-center tw-rounded-sm tw-outline-white">Send Message <img src="" alt="" ></button>
+                    <button class="tw-flex tw-justify-center tw-px-4 tw-py-4 tw-mt-3 tw-w-3/4 tw-text-center tw-border-2 tw-border-dee-text-tertiary tw-text-dee-text-tertiary tw-rounded-dee-radius-6 dee-font-mono">Send Message <img src="assets/images/send.svg" width="26%" alt="" class="tw-px-4"></button>
                 </form>
             </div>
             <div id="footer" class="tw-px-6 tw-py-10">
                 <div id="socials" class="tw-flex tw-justify-evenly tw-my-10">
-                    <img src="assets/images/linkedin 1.svg" alt="linkedin">
-                    <img src="assets/images/twitter 1.svg" alt="twitter">
-                    <img src="assets/images/github 1.svg" alt="github">
+                    <img src="assets/images/linkedin 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="linkedin">
+                    <img src="assets/images/twitter 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="twitter">
+                    <img src="assets/images/github 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="github">
                 </div>
-                <div id="author" class="tw-text-center tw-py-7 tw-my-16 tw-border-y-2">
+                <div id="author" class="tw-text-center tw-py-7 tw-my-16 tw-border-dee-text-secondary/10 tw-border-y-[0.2px] tw-text-dee-text-tertiary/80 dee-font-mono">
                     WebByOuda 2022 &copy;
                 </div>
                 <div id="inspiration" class="tw-flex tw-flex-row tw-items-center tw-justify-around">
