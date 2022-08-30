@@ -571,6 +571,10 @@ video {
   top: 80px;
 }
 
+.tw-z-50 {
+  z-index: 50;
+}
+
 .tw-order-3 {
   order: 3;
 }
@@ -726,12 +730,21 @@ video {
   border-bottom-width: 0.2px;
 }
 
+.tw-border-y-\[1px\] {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
 .tw-border-b-\[0\.2px\] {
   border-bottom-width: 0.2px;
 }
 
 .tw-border-b-2 {
   border-bottom-width: 2px;
+}
+
+.tw-border-b-\[1px\] {
+  border-bottom-width: 1px;
 }
 
 .tw-border-dee-text-secondary\/20 {
