@@ -4,9 +4,7 @@ module.exports = {
     './assets/script.js'
   ],
   theme: {
-    screens: {
-      'sm': '360px'
-    },
+    
 
     extend: {
       borderRadius: {

@@ -49,10 +49,10 @@
 
         <!--About-->
         <section class="tw-h-screen tw-flex tw-flex-col tw-justify-between tw-mt-20">
-            <div id="abouts" class="tw-flex tw-flex-col tw-h-full tw-px-6">
+            <div id="abouts" class="tw-flex tw-flex-col sm:tw-flex-row tw-h-full tw-px-6">
                 <!--About Developer-->
                 <!--Use tw-padding-4 for generic offset from viewport border-->
-                <div class="tw-flex tw-flex-col tw-justify-evenly tw-h-5/6 tw-mb-10">
+                <div class="tw-flex tw-flex-col tw-justify-evenly tw-h-5/6 sm:tw-h-full sm:tw-w-1/2 tw-mb-10">
                     <p class="tw-mt-3 tw-mb-[-1em] tw-text-dee-text-tertiary">Hi, my name is</p>
                     <h1 class="tw-text-5xl tw-font-extrabold tw-leading-tight dee-font-primary">Divine<br ><span class="tw-text-dee-text-secondary">Okafor-udah.</span></h1>
                     <!--<h2 class="tw-text-5xl tw-font-black">Okafor-udah</h2>-->
@@ -64,24 +64,24 @@
                     <a href="#contact" class="tw-flex tw-justify-center tw-px-4 tw-py-4 tw-mt-3 tw-w-3/4 tw-text-center tw-border-2 tw-border-dee-text-tertiary tw-text-dee-text-tertiary tw-rounded-dee-radius-6 dee-font-mono">Get In Touch! <img src="assets/images/hand_shake.svg" width="" alt="" srcset="" class="tw-px-4"></a>
                 </div>
                 
-                <div id="avatar" class="tw-hidden">
+                <div id="avatar" class="tw-hidden sm:tw-flex sm:tw-flex-row sm:tw-w-1/2 sm:tw-p-14">
                     <img id="avatar_image" src="assets/images/dots.svg" alt="">
                 </div>
             </div>            
             <!--Tech Stack-->
-            <div id="tech_stack" class="tw-hidden">
-                <div id="tech_stack_title">
-                    <span>Tech</span>
+            <div id="tech_stack" class="tw-hidden sm:tw-flex tw-bg-black/30 tw-h-1/6 sm:tw-my-16 sm:tw-h-[200px] tw-border-dee-text-tertiary/20 tw-border-y-[1px]">
+                <div id="tech_stack_title" class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-w-1/6 tw-bg-dee-bg-primary/10 tw-text-2xl dee-font-primary tw-font-black tw-uppercase">
+                    <span class="tw-font-extralight">Tech</span>
                     <br >
-                    <span>Stack</span>
+                    <span class="">Stack</span>
                 </div>
 
                 <!--Tech Stack Icons-->
-                <div id="tech_stack_icons">
-                    <img src="assets/images/git_logo.svg" alt="Git">
-                    <img src="assets/images/figma_logo.svg" alt="Figma">
-                    <img src="assets/images/tailwindcss-logotype.svg" alt="Tailwindcss">
-                    <img src="assets/images/webflow_logo.svg" alt="Webflow">  
+                <div id="tech_stack_icons" class="tw-w-full tw-bg-dee-background-secondary tw-flex tw-justify-evenly tw-items-center">
+                    <img src="assets/images/git_logo.svg" alt="Git" class="tw-w-[85px] tw-grayscale tw-opacity-70">
+                    <img src="assets/images/figma_logo.svg" alt="Figma" class="tw-w-[35px] tw-grayscale tw-opacity-70">
+                    <img src="assets/images/tailwindcss-logotype 1.svg" alt="Tailwindcss" class="tw-w-[210px] tw-grayscale tw-opacity-70">
+                    <img src="assets/images/webflow_logo.svg" alt="Webflow" class="tw-w-[125px] tw-grayscale tw-opacity-70">  
                 </div>
             </div>
         </section>
@@ -96,7 +96,7 @@
             </div>
 
             <!--Projects grid-->
-            <div class="tw-px-6">
+            <div class="tw-px-6 sm:tw-grid sm:tw-grid-cols-2 sm:tw-gap-4">
                 <div class="tw-h-[350px] tw-bg-dee-background-secondary tw-rounded-dee-radius-6 tw-mb-20">
                     <div id="project_header" class="tw-flex tw-justify-between">
                         <div id="project_first_letter" class="tw-bg-dee-text-tertiary/20 tw-px-6 tw-py-4 tw-rounded-tl-dee-radius-6 tw-rounded-br-dee-radius-6 tw-text-3xl tw-text-dee-text-tertiary tw-font-black dee-font-primary tw-uppercase">C</div>
