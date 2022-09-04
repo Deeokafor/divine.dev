@@ -15,7 +15,7 @@ isElement(mobileNavBar);
 
 menuOpen.addEventListener('click', function () {
     mobileNavBar.classList.remove('tw-hidden');
-}, true)
+})
 
 menuClose.addEventListener('click', function () {
     mobileNavBar.classList.add('tw-hidden');
