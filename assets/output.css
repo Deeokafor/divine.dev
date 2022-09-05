@@ -601,10 +601,6 @@ video {
   margin-top: 0.75rem;
 }
 
-.tw-mb-\[-1em\] {
-  margin-bottom: -1em;
-}
-
 .tw-mb-12 {
   margin-bottom: 3rem;
 }
@@ -617,8 +613,16 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.tw-mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .tw-flex {
   display: flex;
+}
+
+.tw-grid {
+  display: grid;
 }
 
 .tw-hidden {
@@ -693,6 +697,10 @@ video {
   cursor: pointer;
 }
 
+.tw-grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .tw-flex-row {
   flex-direction: row;
 }
@@ -723,6 +731,14 @@ video {
 
 .tw-justify-evenly {
   justify-content: space-evenly;
+}
+
+.tw-gap-4 {
+  gap: 1rem;
+}
+
+.tw-gap-5 {
+  gap: 1.25rem;
 }
 
 .tw-rounded-dee-radius-6 {
@@ -809,6 +825,40 @@ video {
   background-color: rgb(136 146 176 / 0.1);
 }
 
+.tw-bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.tw-bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.tw-bg-orange-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(124 45 18 / var(--tw-bg-opacity));
+}
+
+.tw-bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.tw-bg-gradient-to-tl {
+  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.tw-from-dee-background-primary {
+  --tw-gradient-from: #0A192F;
+  --tw-gradient-to: rgb(10 25 47 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.tw-to-dee-background-secondary {
+  --tw-gradient-to: #112240;
+}
+
 .tw-p-4 {
   padding: 1rem;
 }
@@ -866,12 +916,21 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.tw-py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .tw-pb-32 {
   padding-bottom: 8rem;
 }
 
 .tw-pr-2 {
   padding-right: 0.5rem;
+}
+
+.tw-pt-6 {
+  padding-top: 1.5rem;
 }
 
 .tw-text-center {
@@ -1067,13 +1126,22 @@ video {
     display: flex;
   }
 
-  .md\:tw-py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  .md\:tw-bg-gradient-to-tl {
+    background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
   .md\:tw-py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:tw-px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .md\:tw-px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
