@@ -12,26 +12,32 @@
 
 <body class="tw-bg-dee-background-primary tw-text-dee-text-primary">
     <main class="">
-        <nav class="tw-fixed tw-top-0 tw-w-full tw-h-[80px] tw-flex tw-flex-row tw-justify-between tw-text-dee-text-tertiary tw-backdrop-blur-md tw-bg-dee-background-primary/70 tw-border-b-[1px] tw-border-dee-text-secondary/30 tw-px-6 md:tw-px-28 tw-uppercase dee-font-mono tw-z-50">
+        <nav class="tw-fixed tw-top-0 tw-w-full tw-h-[80px] tw-flex tw-flex-row tw-justify-between tw-text-dee-text-tertiary tw-backdrop-blur-md tw-bg-dee-background-primary/70 tw-border-b-[1px] tw-border-dee-text-secondary/30 tw-px-6  tw-uppercase dee-font-mono tw-z-50 sm:tw-px-14 lg:tw-px-28">
             <div class="tw-flex tw-flex-row tw-justify-between tw-items-center tw-w-full tw-bg-">
                 <div id="logo" class="">divine.dev</div>
-                <div id="menu_open" class="md:tw-hidden"><img src="assets/images/menu.svg" alt="" srcset="" class="tw-p-4"></div>
+                <div id="menu_open" class="lg:tw-hidden"><img src="assets/images/menu.svg" alt="" srcset="" class="tw-p-4"></div>
             </div>
 
             <!--Large screen menu-->
-            <div class="tw-hidden tw-absolute tw-left-0 tw-top-[80px] tw-h-screen tw-w-full tw-backdrop-blur-[9px] tw-bg-dee-background-primary/10 md:tw-flex md:tw-relative md:tw-top-0 md:tw-h-[80px] md:tw-items-center md:tw-w-3/5 md:tw-backdrop-blur-0 tw-capitalize">
+            <div class="tw-hidden tw-absolute tw-left-0 tw-top-[80px] tw-h-screen tw-w-full tw-backdrop-blur-[9px] tw-bg-dee-background-primary/10 lg:tw-flex lg:tw-relative lg:tw-top-0 lg:tw-h-[80px] lg:tw-items-center lg:tw-w-3/5 lg:tw-backdrop-blur-0 tw-capitalize">
                 <ul class="tw-flex tw-w-full tw-justify-between">
                     <li>
-                        <div >about</div>
-                        <div class="nav_notifier tw-p-[2px] tw-m-auto tw-w-[1px] tw-rounded-full tw-bg-dee-text-tertiary/30"></div>
+                        <a href="#section_abouts">
+                            <div>about</div>
+                            <div class="nav_notifier tw-p-[2px] tw-m-auto tw-w-[1px] tw-rounded-full tw-bg-dee-text-tertiary/30"></div>
+                        </a>
                     </li>
                     <li>
-                        <div >projects</div>
-                        <div class="nav_notifier"></div>
+                        <a href="#section_projects">
+                            <div>projects</div>
+                            <div class="nav_notifier"></div>
+                        </a>
                     </li>
                     <li>
-                        <div >contact</div>
-                        <div class="nav_notifier"></div>
+                        <a href="#section_contact">
+                            <div>contact</div>
+                            <div class="nav_notifier"></div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -49,20 +55,20 @@
         </nav>
 
         <!--About-->
-        <section class="tw-h-screen tw-pt-6 tw-flex tw-flex-col tw-justify-evenly tw-mt-20 md:tw-bg-gradient-to-tl tw-from-dee-background-primary tw-to-dee-background-secondary">
-            <div id="abouts" class="tw-flex tw-flex-col  tw-h-full tw-px-6 md:tw-px-28">
+        <section id="section_abouts" class="tw-py-12 tw-h-screen tw-pt-6 tw-flex tw-flex-col tw-justify-evenly tw-mt-20 lg:tw-bg-gradient-to-tl tw-from-dee-background-primary tw-to-dee-background-secondary lg:tw-py-24">
+            <div id="abouts" class="tw-flex tw-flex-col  tw-h-full tw-px-6 sm:tw-px-14 lg:tw-px-28">
                 <!--About Developer-->
                 <!--Use tw-padding-4 for generic offset from viewport border-->
-                <div class="tw-flex tw-flex-col tw-justify-center tw-h-5/6">
-                    <p class="tw-mt-3 tw-text-dee-text-tertiary">Hi, my name is</p>
-                    <h1 class="tw-text-5xl tw-font-extrabold tw-leading-tight dee-font-primary">Divine<br ><span class="tw-text-dee-text-secondary">Okafor-udah.</span></h1>
+                <div class="tw-flex tw-flex-col tw-justify-evenly tw-h-full sm:tw-justify-center">
+                    <p class="tw-mt-3 tw-text-dee-text-tertiary sm:tw-my-3">Hi, my name is</p>
+                    <h1 class="tw-text-5xl tw-font-extrabold tw-leading-tight dee-font-primary sm:tw-my-3">Divine<br ><span class="tw-text-dee-text-secondary">Okafor-udah.</span></h1>
                     <!--<h2 class="tw-text-5xl tw-font-black">Okafor-udah</h2>-->
-                    <div class="tw-leading-7">
+                    <div class="tw-leading-7 sm:tw-my-3">
                         I am a Web Developer with specialization in crafting front-end User Interfaces (UI) & Experiences (UX) to the finest pixel.
                         I am proficient in <span class="tw-text-dee-text-tertiary">Tailwindcss, Webflow, Figma, & Javascript</span>.
                         I am a beneficiary of the Andela Learning Community 4.0, Google Africa Developer Scholarship (GADS 2020) and certified a Mobile Web Specialist. I am very active in the Google Developers Group (GDG) in my locale of Onitsha, Anambra, Nigeria. You can check out my certifications <a href="#" class="tw-text-dee-text-tertiary tw-underline  tw-underline-offset-4">here</a>.
                     </div>
-                    <a href="#contact" class="tw-flex tw-justify-center tw-px-4 tw-py-4 tw-mt-3 tw-w-3/4 tw-text-center tw-border-2 tw-border-dee-text-tertiary tw-text-dee-text-tertiary tw-rounded-dee-radius-6 dee-font-mono">Get In Touch! <img src="assets/images/hand_shake.svg" width="" alt="" srcset="" class="tw-px-4"></a>
+                    <a href="#contact" class="tw-flex tw-justify-center tw-px-4 tw-py-4 tw-mt-3 tw-w-3/4 tw-text-center tw-border-2 tw-border-dee-text-tertiary tw-text-dee-text-tertiary tw-rounded-dee-radius-6 dee-font-mono sm:tw-my-5">Get In Touch! <img src="assets/images/hand_shake.svg" class="tw-px-4"></a>
                 </div>
                 
                 <div id="avatar" class="tw-hidden">
@@ -88,8 +94,8 @@
         </section>
 
         <!--Projects-->
-        <section class="tw-min-h-screen tw-py-12">
-            <div class="tw-px-6 md:tw-px-28">
+        <section id="section_projects" class="tw-min-h-auto tw-py-12 lg:tw-py-24">
+            <div class="tw-px-6 sm:tw-px-14 lg:tw-px-28">
                 <h2 id="project_page_title" class="tw-text-4xl tw-font-extrabold tw-text-center tw-text-dee-text-tertiary dee-font-primary">Projects</h2>
                 <p id="project_page_description" class="tw-text-center tw-font-medium tw-mt-3 tw-mb-12 tw-text-dee-text-secondary">
                     Some of my noteworthy projects.
@@ -97,8 +103,8 @@
             </div>
 
             <!--Projects grid-->
-            <div class="tw-px-6 md:tw-px-28 tw-grid sm:tw-grid-cols-2 tw-gap-5">
-                <div class="tw-h-[350px] tw-bg-dee-background-secondary tw-rounded-dee-radius-6">
+            <div class="tw-px-6 tw-grid tw-gap-10 lg:tw-grid-cols-2 sm:tw-px-14 lg:tw-px-28">
+                <div class="tw-h-[350px] tw-bg-dee-background-secondary tw-rounded-dee-radius-6 tw-shadow-lg">
                     <div id="project_header" class="tw-flex tw-justify-between">
                         <div id="project_first_letter" class="tw-bg-dee-text-tertiary/20 tw-px-6 tw-py-4 tw-rounded-tl-dee-radius-6 tw-rounded-br-dee-radius-6 tw-text-3xl tw-text-dee-text-tertiary tw-font-black dee-font-primary tw-uppercase">C</div>
                         <a id="project_external_link" class="tw-px-8 tw-py-6"><img src="assets/images/external-link.svg" alt="" srcset=""></a>
@@ -116,7 +122,7 @@
                     </div>                    
                 </div>
                 
-                <div class="tw-h-[350px] tw-bg-dee-background-secondary tw-rounded-dee-radius-6">
+                <div class="tw-h-[350px] tw-bg-dee-background-secondary tw-rounded-dee-radius-6 tw-shadow-lg">
                     <div id="project_header" class="tw-flex tw-justify-between">
                         <div id="project_first_letter" class="tw-bg-dee-text-tertiary/20 tw-px-6 tw-py-4 tw-rounded-tl-dee-radius-6 tw-rounded-br-dee-radius-6 tw-text-3xl tw-text-dee-text-tertiary tw-font-black dee-font-primary tw-uppercase">b</div>
                         <a id="project_external_link" class="tw-px-8 tw-py-6"><img src="assets/images/external-link.svg" alt="" srcset=""></a>
@@ -137,8 +143,8 @@
         </section>
 
         <!--Contact-->
-        <section class="tw-h-min-screen tw-py-12">
-            <div id="contact_page_header" class="tw-px-6 md:tw-px-28">
+        <section id="section_contact" class="tw-h-min-screen tw-py-12 lg:tw-py-24">
+            <div id="contact_page_header" class="tw-px-6 sm:tw-px-14 lg:tw-px-28">
                 <h2 id="contact_page_title" class="tw-text-4xl tw-font-extrabold tw-text-center tw-text-dee-text-tertiary dee-font-primary">Get In Touch</h2>
                 <p id="contact_page_description" class="tw-text-center tw-font-medium tw-mt-3 tw-mb-12 tw-text-dee-text-secondary">
                     <span>
@@ -151,8 +157,8 @@
             </div>
 
             <!--Contact form-->
-            <div class="tw-px-6 md:tw-px-28 md:tw-py-24 md:tw-flex">
-                <div id="contact_info" class="tw-hidden md:tw-block">
+            <div class="tw-px-6 sm:tw-px-14 lg:tw-px-28 lg:tw-py-24 lg:tw-flex">
+                <div id="contact_info" class="tw-hidden lg:tw-block">
                     <div id="contact_info_header">
                         <h3 id="contact_info_title">Contact Information</h3>
                         <p id="contact_info_description">
@@ -201,7 +207,7 @@
                     <button class="tw-flex tw-justify-center tw-px-4 tw-py-4 tw-mt-3 tw-w-3/4 tw-text-center tw-border-2 tw-border-dee-text-tertiary tw-text-dee-text-tertiary tw-rounded-dee-radius-6 dee-font-mono">Send Message <img src="assets/images/send.svg" width="" alt="" class="tw-px-4"></button>
                 </form>
             </div>
-            <div id="footer" class="tw-px-6 tw-py-10">
+            <div id="footer" class="tw-px-6 tw-py-10 sm:tw-px-14">
                 <div id="socials" class="tw-flex tw-justify-evenly tw-my-10">
                     <img src="assets/images/linkedin 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="linkedin">
                     <img src="assets/images/twitter 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="twitter">
