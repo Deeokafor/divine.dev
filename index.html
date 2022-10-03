@@ -157,7 +157,7 @@
             </div>
 
             <!--Contact form-->
-            <div class="tw-px-6 sm:tw-px-14 lg:tw-mx-28 lg:tw-h-[80vh] lg:tw-py-2 lg:tw-px-2 lg:tw-flex lg:tw-bg-dee-background-secondary lg:tw-rounded-dee-radius-6">
+            <div class="tw-px-6 sm:tw-px-14 lg:tw-mx-28 lg:tw-h-auto lg:tw-py-2 lg:tw-px-2 lg:tw-flex lg:tw-bg-dee-background-secondary lg:tw-rounded-dee-radius-6">
                 <div id="contact_info" class="tw-hidden lg:tw-flex lg:tw-flex-col lg:tw-bg-dee-background-primary lg:tw-rounded-dee-radius-6 lg:tw-w-2/5 lg:tw-p-10">
                     <div id="contact_info_header">
                         <h3 id="contact_info_title" class="tw-text-2xl tw-font-extrabold tw-text-dee-text-tertiary dee-font-primary">Contact Information</h3>
@@ -207,23 +207,36 @@
                     <button class="tw-flex tw-justify-center tw-px-4 tw-py-4 tw-mt-3 tw-w-3/4 tw-text-center tw-border-2 tw-border-dee-text-tertiary tw-text-dee-text-tertiary tw-rounded-dee-radius-6 dee-font-mono lg:tw-w-2/4">Send Message <img src="assets/images/send.svg" width="" alt="" class="tw-px-4"></button>
                 </form>
             </div>
-            <div id="footer" class="tw-px-6 tw-py-10 sm:tw-px-14">
-                <div id="socials" class="tw-flex tw-justify-evenly tw-my-10">
-                    <img src="assets/images/linkedin 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="linkedin">
-                    <img src="assets/images/twitter 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="twitter">
-                    <img src="assets/images/github 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="github">
+
+            <!--Footer div-->
+            <div id="footer" class="tw-px-6 tw-py-10 sm:tw-px-28 lg:tw-flex lg:tw-justify-between lg:tw-items-center">
+                <div id="socials" class="tw-flex tw-justify-evenly tw-my-10 lg:tw-w-1/3 lg:tw-justify-start">
+                    <div class="lg:tw-mr-10">
+                        <img src="assets/images/linkedin 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="linkedin">
+                    </div>
+                    <div class="lg:tw-mr-10">
+                        <img src="assets/images/twitter 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="twitter">
+                    </div>
+                    <div class="lg:tw-mr-10">
+                        <img src="assets/images/github 1.svg" class="tw-bg-dee-text-secondary/10 tw-p-2  tw-rounded-dee-radius-6" alt="github">
+                    </div>
                 </div>
-                <div id="author" class="tw-text-center tw-py-7 tw-my-16 tw-border-dee-text-secondary/30 tw-border-y-[1px] tw-text-dee-text-tertiary/80 dee-font-mono">
+                <div id="author" class="tw-text-center tw-py-7 tw-my-16 tw-border-dee-text-secondary/30 tw-border-y-[1px] tw-text-dee-text-tertiary/80 dee-font-mono lg:tw-border-0 lg:text-center lg:tw-w-1/3">
                     WebByOuda 2022 &copy;
                 </div>
-                <div id="inspiration" class="tw-flex tw-flex-row tw-items-center tw-justify-around">
-                    <a href="https://brittanychiang.com/" class="tw-order-3">
-                        <img src="assets/images/brittanychiang.png" alt="brittanychiang" width="24px">
-                    </a>
-                    <a href="https://coolicons.cool/" class="">
-                        <img src="assets/images/coolicons-logo-light 1.svg" alt="coolicons" width="">
-                    </a>
-                    <a href="https://tailwindcss.com/docs/installation" class="">
+                <div id="inspiration" class="tw-flex tw-flex-row tw-items-center tw-justify-around lg:tw-w-1/3">
+                    <div>
+                        <a href="https://brittanychiang.com/" class="tw-order-3 lg:tw-order-1 ">
+                            <img src="assets/images/brittanychiang.png" alt="brittanychiang" width="24px" class="lg:tw-hidden">
+                            <div class="tw:hidden lg:tw-block dee-font-mono tw-text-dee-text-tertiary">brittanychiang.com</div>
+                        </a>                        
+                    </div>
+                    <div>
+                        <a href="https://coolicons.cool/" class="lg:tw-order-2 lg:tw-ml-6">
+                            <img src="assets/images/coolicons-logo-light 1.svg" alt="coolicons" width="">
+                        </a>
+                    </div>
+                    <a href="https://tailwindcss.com/docs/installation" class="lg:tw-order-3 lg:tw-ml-6">
                         <img src="assets/images/tailwindcss-logotype 1.svg" alt="Tailwindcss" width="">
                     </a>
                 </div>
