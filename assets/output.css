@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -410,6 +410,12 @@ video {
   height: auto;
 }
 
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -613,6 +619,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.tw-block {
+  display: block;
+}
+
 .tw-flex {
   display: flex;
 }
@@ -805,6 +815,11 @@ video {
   background-color: rgb(0 0 0 / 0.3);
 }
 
+.tw-bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .tw-bg-dee-text-tertiary\/20 {
   background-color: rgb(121 244 219 / 0.2);
 }
@@ -815,6 +830,11 @@ video {
 
 .tw-bg-dee-text-secondary\/10 {
   background-color: rgb(136 146 176 / 0.1);
+}
+
+.tw-bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
 .tw-p-4 {
@@ -1001,8 +1021,7 @@ video {
 }
 
 .tw-underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .tw-underline-offset-4 {
