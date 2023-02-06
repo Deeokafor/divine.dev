@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;700;800;900&family=Roboto&family=Roboto+Mono&display=swap');
+@font-face {
+    font-family: 'calibre';
+    src: url('./assets/fonts/calibre/CalibreBlack.otf');
+}
+
+@font-face {
+    font-family: 'sf-mono';
+    src: url('assets/fonts/sf-mono-cufonfonts/')
+}
 
 html {
     scroll-behavior: smooth;
 }
 
+/*
 #figma_logo {
     width: 30px;
 }
@@ -16,6 +25,7 @@ html {
 #webflow_logo {
     width: 120px
 }
+*/
 
 .dee-font-mono {
     font-family: 'Roboto Mono';
@@ -27,4 +37,9 @@ html {
 
 .dee-font-secondary {
     font-family: Roboto;
+}
+
+.dee-big-heading {
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 600;
 }
