@@ -43,3 +43,22 @@ html {
     font-size: clamp(40px, 8vw, 80px);
     font-weight: 600;
 }
+
+#insp_brittany {
+    width: 24px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #insp_brittany {
+        width: 24px;
+    }
+
+    #insp_coolicons {
+        width: 120px;
+    }
+
+    #insp_tailwindcss {
+        width: 130px;
+    }
+}
