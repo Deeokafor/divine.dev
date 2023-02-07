@@ -14,7 +14,7 @@
     <main class="tw-bg-black/20">
         <nav class="tw-fixed tw-top-0 tw-w-full tw-h-[80px] tw-flex tw-flex-row tw-justify-between tw-text-dee-text-tertiary tw-backdrop-blur-md tw-bg-dee-background-primary/70 tw-border-b-[1px] tw-border-dee-text-secondary/30 tw-px-6  tw-uppercase dee-font-mono tw-z-50 sm:tw-px-14 lg:tw-px-28">
             <div class="tw-flex tw-flex-row tw-justify-between tw-items-center tw-w-full tw-bg-">
-                <div id="logo" class="">divine.dev</div>
+                <a href="#"><div id="logo" class="">divine.dev</div></a>
                 <div id="menu_open" class="lg:tw-hidden"><img src="assets/images/menu.svg" alt="" srcset="" class="tw-p-4"></div>
             </div>
 
@@ -96,17 +96,31 @@
         </section> -->
 
         <!--About-->
-        <section class="tw-py-[60px] tw-flex tw-flex-col">
-            <div id="avatar_div" class="tw-p-14 tw-order-2">
-                <img id="avatar_image" src="assets/images/dots.svg" alt="" class="tw-bg-black">
+        <section class="tw-py-[60px] tw-flex tw-flex-col lg:tw-flex-row">
+            <div id="avatar_div" class="tw-p-14 tw-order-2 lg:tw-w-1/2 lg:tw-flex-row lg:tw-justify-center tw-items-center">
+                <img id="avatar_image" src="assets/images/dots.svg" alt="" class="">
             </div>
-            <div class="tw-px-6 sm:tw-px-14 lg:tw-px-28">
+            <div class="tw-px-6 sm:tw-px-14 lg:tw-px-28 lg:tw-w-2/3">
                 <h2 id="project_page_title" class="tw-text-4xl tw-font-extrabold tw-text-center tw-text-dee-text-tertiary dee-font-primary">About Me</h2>
                 <div class="tw-text-dee-text-primary/80 tw-mt-3 tw-mb-12 tw-leading-7 sm:tw-my-3 lg:tw-my-1">
-                    I am a Web Developer with specialization in crafting front-end User Interfaces (UI) & Experiences (UX) to the finest pixel.
-                    I am proficient in <span class="tw-text-dee-text-tertiary">Tailwindcss, Webflow, Figma, & Javascript</span>.
-                    I am a beneficiary of the Andela Learning Community 4.0, Google Africa Developer Scholarship (GADS 2020) and certified a Mobile Web Specialist. I am very active in the Google Developers Group (GDG) in my locale of Onitsha, Anambra, Nigeria. You can check out my certifications <a href="#" class="tw-text-dee-text-tertiary tw-underline  tw-underline-offset-4">here</a>.
+                    <p class="tw-my-5">
+                        I am a Web Developer with specialization in crafting front-end User Interfaces (UI) & Experiences (UX) to the finest pixel.
+                        I am proficient in <span class="tw-text-dee-text-tertiary">Tailwindcss, Webflow, Figma, & Javascript</span>.
+                    </p>
+                    <p class="tw-my-5">
+                        I am a beneficiary of the Andela Learning Community 4.0, Google Africa Developer Scholarship (GADS 2020) and certified a Mobile Web Specialist. I am very active in the Google Developers Group (GDG) in my locale of Onitsha, Anambra, Nigeria. You can check out my certifications <a href="#" class="tw-text-dee-text-tertiary tw-underline  tw-underline-offset-4">here</a>.
+                    </p>
                 </div>
+
+                <!--tooling-->
+                <ul class="tw-grid tw-grid-cols-2 tw-gap-1 tw-font-mono tw-text-[16px] tw-opacity-70">
+                    <li>figma</li>
+                    <li>git</li>
+                    <li>tailwindcss</li>
+                    <li>javascript (ES5 & ES6)</li>
+                    <li>webflow</li>
+                    <li>node.js</li>
+                </ul>
             </div>
         </section>
 
