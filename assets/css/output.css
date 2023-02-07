@@ -567,8 +567,12 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.tw-mt-5 {
-  margin-top: 1.25rem;
+.tw-mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.tw-mt-8 {
+  margin-top: 2rem;
 }
 
 .tw-mt-3 {
@@ -583,24 +587,8 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.tw-mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-.tw-mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.tw-mt-8 {
-  margin-top: 2rem;
-}
-
 .tw-flex {
   display: flex;
-}
-
-.tw-table-caption {
-  display: table-caption;
 }
 
 .tw-grid {
@@ -681,6 +669,10 @@ video {
 
 .tw-items-center {
   align-items: center;
+}
+
+.tw-justify-start {
+  justify-content: flex-start;
 }
 
 .tw-justify-end {
@@ -787,6 +779,11 @@ video {
   background-color: rgb(17 34 64 / var(--tw-bg-opacity));
 }
 
+.tw-bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .tw-bg-black\/30 {
   background-color: rgb(0 0 0 / 0.3);
 }
@@ -803,14 +800,29 @@ video {
   background-color: rgb(136 146 176 / 0.1);
 }
 
-.tw-bg-white {
+.tw-bg-green-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
-.tw-bg-black {
+.tw-bg-green-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
+}
+
+.tw-bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.tw-bg-purple-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+}
+
+.tw-bg-fuchsia-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 70 239 / var(--tw-bg-opacity));
 }
 
 .tw-p-4 {
@@ -937,12 +949,12 @@ video {
   line-height: 1.25rem;
 }
 
-.tw-font-extrabold {
-  font-weight: 800;
-}
-
 .tw-font-black {
   font-weight: 900;
+}
+
+.tw-font-extrabold {
+  font-weight: 800;
 }
 
 .tw-font-extralight {
@@ -951,10 +963,6 @@ video {
 
 .tw-font-medium {
   font-weight: 500;
-}
-
-.tw-font-bold {
-  font-weight: 700;
 }
 
 .tw-uppercase {
@@ -967,10 +975,6 @@ video {
 
 .tw-leading-\[1\.3\] {
   line-height: 1.3;
-}
-
-.tw-leading-\[50px\] {
-  line-height: 50px;
 }
 
 .tw-leading-\[44px\] {
@@ -989,28 +993,8 @@ video {
   line-height: 1.5rem;
 }
 
-.tw-leading-3 {
-  line-height: .75rem;
-}
-
-.tw-leading-\[\] {
-  line-height: ;
-}
-
-.tw-leading-\[0\.9\] {
-  line-height: 0.9;
-}
-
-.tw-leading-\[1\.1\] {
-  line-height: 1.1;
-}
-
-.tw-leading-\[100px\] {
-  line-height: 100px;
-}
-
-.tw-leading-\[10px\] {
-  line-height: 10px;
+.tw-leading-normal {
+  line-height: 1.5;
 }
 
 .tw-text-dee-text-primary {
@@ -1052,20 +1036,12 @@ video {
   color: rgb(197 234 227 / 0.7);
 }
 
-.tw-opacity-70 {
-  opacity: 0.7;
-}
-
 .tw-opacity-60 {
   opacity: 0.6;
 }
 
-.tw-opacity-75 {
-  opacity: 0.75;
-}
-
-.tw-opacity-50 {
-  opacity: 0.5;
+.tw-opacity-70 {
+  opacity: 0.7;
 }
 
 .tw-shadow-lg {
@@ -1176,6 +1152,26 @@ video {
     margin-left: 1.5rem;
   }
 
+  .lg\:tw-mb-1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .lg\:tw-mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:tw-mb-\[\] {
+    margin-bottom: ;
+  }
+
+  .lg\:tw-mb-\[-1\] {
+    margin-bottom: -1;
+  }
+
+  .lg\:tw-mb-\[-10px\] {
+    margin-bottom: -10px;
+  }
+
   .lg\:tw-block {
     display: block;
   }
@@ -1194,6 +1190,10 @@ video {
 
   .lg\:tw-h-auto {
     height: auto;
+  }
+
+  .lg\:tw-h-full {
+    height: 100%;
   }
 
   .lg\:tw-w-3\/5 {
@@ -1220,6 +1220,14 @@ video {
     width: 50%;
   }
 
+  .lg\:tw-w-3\/4 {
+    width: 75%;
+  }
+
+  .lg\:tw-w-4\/6 {
+    width: 66.666667%;
+  }
+
   .lg\:tw-grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1238,6 +1246,10 @@ video {
 
   .lg\:tw-justify-start {
     justify-content: flex-start;
+  }
+
+  .lg\:tw-justify-center {
+    justify-content: center;
   }
 
   .lg\:tw-justify-between {
@@ -1291,12 +1303,30 @@ video {
     padding-bottom: 0.75rem;
   }
 
+  .lg\:tw-px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .lg\:tw-py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .lg\:tw-pr-10 {
     padding-right: 2.5rem;
   }
 
   .lg\:tw-pl-10 {
     padding-left: 2.5rem;
+  }
+
+  .lg\:tw-leading-normal {
+    line-height: 1.5;
+  }
+
+  .lg\:tw-leading-tight {
+    line-height: 1.25;
   }
 
   .lg\:tw-backdrop-blur-0 {

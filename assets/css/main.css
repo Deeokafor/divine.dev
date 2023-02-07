@@ -40,7 +40,7 @@ html {
 }
 
 .dee-big-heading {
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 8vw, 70px);
     font-weight: 600;
 }
 
