@@ -1,11 +1,15 @@
 @font-face {
     font-family: 'calibre';
-    src: url('./assets/fonts/calibre/CalibreBlack.otf');
+    src: url('assets/fonts/calibre/CalibreRegular.otf');
 }
 
 @font-face {
     font-family: 'sf-mono';
-    src: url('assets/fonts/sf-mono-cufonfonts/')
+    src: url('assets/fonts/sf-mono-cufonfonts/SFMonoRegular.otf')
+}
+
+* {
+    transition: 0.3s;
 }
 
 html {
@@ -28,20 +32,20 @@ html {
 */
 
 .dee-font-mono {
-    font-family: 'Roboto Mono';
+    font-family: 'sf-mono';
 }
 
 .dee-font-primary {
-    font-family: Public Sans;
+    font-family: Public Sas;
 }
 
 .dee-font-secondary {
-    font-family: Roboto;
+    font-family: calibre;
 }
 
 .dee-big-heading {
-    font-size: clamp(40px, 8vw, 70px);
-    font-weight: 600;
+    font-size: clamp(32px, 8vw, 70px);
+    font-weight: 700;
 }
 
 #insp_brittany {
