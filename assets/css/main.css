@@ -1,13 +1,44 @@
 @font-face {
     font-family: 'calibre';
-    src: url('assets/fonts/calibre/CalibreRegular.otf');
+    src: url('../fonts/calibre/CalibreRegular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'calibre';
+    src: url('../fonts/calibre/CalibreSemibold.otf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'calibre';
+    src: url('../fonts/calibre/CalibreBold.otf');
+    font-style: normal;
+    font-weight: 700;
 }
 
 @font-face {
     font-family: 'sf-mono';
-    src: url('assets/fonts/sf-mono-cufonfonts/SFMonoRegular.otf')
+    src: url('../fonts/sf-mono/SFMonoBold.otf');
+    font-style: normal;
+    font-weight: 700;
 }
 
+@font-face {
+    font-family: 'sf-mono';
+    src: url('../fonts/sf-mono/SFMonoRegular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'sf-mono';
+    src: url('../fonts/sf-mono/SFMonoSemibold.otf');
+    font-style: normal;
+    font-weight: 600;
+}
 * {
     transition: 0.3s;
 }
@@ -35,34 +66,58 @@ html {
     font-family: 'sf-mono';
 }
 
-.dee-font-primary {
-    font-family: Public Sas;
-}
-
-.dee-font-secondary {
+.dee-font-calibre {
     font-family: calibre;
 }
 
 .dee-big-heading {
-    font-size: clamp(32px, 8vw, 70px);
-    font-weight: 700;
+    font-size: clamp(38px, 8vw, 75px);
+    font-weight: 600;
 }
 
-#insp_brittany {
+.dee-medium-heading {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.dee-small-heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.dee-font-xs {
+    font-size: 13px;
+}
+
+.dee-font-sm {
+    font-size: 14px;
+}
+
+.dee-font-md {
+    font-size: 18px;
+}
+
+.dee-font-lg {
+    font-size: 20px;
+}
+
+#inspiration-brittany {
     width: 24px;
 }
 
 
 @media only screen and (max-width: 500px) {
-    #insp_brittany {
+    #inspiration-brittany {
         width: 24px;
     }
 
-    #insp_coolicons {
+    #inspiration-coolicons {
         width: 120px;
     }
 
-    #insp_tailwindcss {
+    #inspiration-tailwindcss {
         width: 130px;
     }
 }
