@@ -8,14 +8,21 @@
     <link rel="stylesheet" href="./assets/css/output.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <script src="assets/js/script.js" defer></script>
+<script src="assets/js/sendMail.js" defer></script>
 
 <body class="tw-bg-dee-background-primary tw-text-dee-text-primary">
     <main class="dee-font-calibre tw-bg-black/20">
-        <nav class="tw-fixed tw-top-0 tw-w-full tw-h-[80px] tw-flex tw-flex-row tw-justify-between tw-text-dee-text-tertiary tw-backdrop-blur-md tw-bg-dee-background-primary/70 tw-border-b-[1px] tw-border-dee-text-secondary/30 tw-px-6  tw-uppercase dee-font-mono dee-font-xs tw-z-50 sm:tw-px-14 lg:tw-px-28">
+        <nav class="dee-font-mono dee-font-xs tw-fixed tw-top-0 tw-w-full tw-h-[80px] tw-flex tw-flex-row tw-justify-between tw-text-dee-text-tertiary tw-backdrop-blur-md tw-bg-dee-background-primary/70 tw-border-b-[1px] tw-border-dee-text-secondary/30 tw-px-6 tw-uppercase tw-z-50 sm:tw-px-14 lg:tw-px-28">
             <div class="tw-flex tw-flex-row tw-justify-between tw-items-center tw-w-full tw-bg-">
                 <a href="#"><div id="logo" class="">divine.dev</div></a>
-                <div id="menu_open" class="lg:tw-hidden"><img src="assets/images/menu.svg" alt="" srcset="" class="tw-p-4"></div>
+                <div id="menu_open" class="tw-flex tw-flex-col tw-justify-between tw-items-end tw-w-[45px] tw-h-[38px] tw-p-2 lg:tw-hidden">
+                    <img class="tw-p-4 tw-hidden" src="assets/images/menu.svg" alt="mobile-menu">
+                    <div class="tw-h-[2px] tw-rounded-full tw-w-full tw-bg-dee-text-tertiary"></div>
+                    <div class="tw-h-[2px] tw-rounded-full tw-w-2/3 tw-bg-dee-text-tertiary"></div>
+                    <div class="tw-h-[2px] tw-rounded-full tw-w-1/3 tw-bg-dee-text-tertiary"></div>
+                </div>
             </div>
 
             <!--Large screen menu-->
@@ -254,25 +261,31 @@
                 </div>
 
                 <!--Form-->
-                <form class="dee-font-md tw-flex tw-flex-col tw-items-center lg:tw-w-full lg:tw-p-10 lg:tw-items-start">
+                <form action="https://formsubmit.co/d99518444490f4595340c829f00ca2d5" method="POST" class="dee-font-md tw-flex tw-flex-col tw-items-center lg:tw-w-full lg:tw-p-10 lg:tw-items-start">
+                    <!--disable recaptcha-->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!--honeypot for spammers-->
+                    <input type="text" name="_honey" style="display: none">
+                    <!--template to style email-->
+                    <input type="hidden" name="_template" value="table">
                     <div id="name_email_div" class="tw-w-full tw-capitalize lg:tw-flex lg:tw-justify-between">
                         <label for="fullname" class="tw-text-dee-text-tertiary lg:tw-w-3/5 lg:tw-pr-10"> name
-                            <input type="text" name="fullname" id="fullname" placeholder="John Okafor" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder/70">
+                            <input type="text" name="full name" id="fullname" placeholder="John Okafor" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder/70">
                         </label>
                         <label for="email" class="tw-text-dee-text-tertiary lg:tw-w-3/5 lg:tw-pl-10"> email
                             <input type="email" name="email" id="email" placeholder="johnokafor@protonmail.com" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder/70">
                         </label>
                     </div>
                     <label for="phonenumber" class="tw-w-full tw-text-dee-text-tertiary lg:tw-w-1/2 lg:tw-pr-10"> phone number
-                        <input type="tel" name="phonenumber" id="phonenumber" placeholder="+234-123-456-789" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder/70">
+                        <input type="tel" name="contact" id="phonenumber" placeholder="+234-123-456-789" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder/70">
                     </label>
                     <label for="" class="tw-w-full tw-text-dee-text-tertiary"> Subject
-                        <input type="text" name="" id="" placeholder="I want a landing page" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder/70">
+                        <input type="text" name="subject" id="email-subject" placeholder="I want a landing page" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-5 tw-text-sm tw-placeholder-dee-text-placeholder/70">
                     </label>
                     <label for="" class="tw-capitalize tw-w-full tw-text-dee-text-tertiary"> message
-                        <textarea name="" id="" cols="" rows="4" placeholder="your message" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-10 tw-text-sm tw-placeholder-dee-text-placeholder/70"></textarea>
+                        <textarea name="email body" id="" cols="" rows="4" placeholder="your message" class="tw-w-full tw-py-3 tw-bg-transparent tw-border-0 tw-border-b-2 tw-border-dee-text-tertiary tw-mb-10 tw-text-sm tw-placeholder-dee-text-placeholder/70"></textarea>
                     </label>
-                    <button type="submit" class="dee-font-mono dee-font-sm tw-flex tw-justify-center tw-px-4 tw-py-4 tw-mt-3 tw-w-3/4 tw-text-center tw-border-2 tw-border-dee-text-tertiary tw-text-dee-text-tertiary tw-rounded-dee-radius-6 lg:tw-w-2/4 hover:tw-bg-dee-text-tertiary/10">Send Message <img src="assets/images/send.svg" width="" alt="" class="tw-px-4"></button>
+                    <button type="submit" id="submit-button" class="dee-font-mono dee-font-sm tw-flex tw-justify-center tw-px-4 tw-py-4 tw-mt-3 tw-w-3/4 tw-text-center tw-border-2 tw-border-dee-text-tertiary tw-text-dee-text-tertiary tw-rounded-dee-radius-6 lg:tw-w-2/4 hover:tw-bg-dee-text-tertiary/10">Send Message <img src="assets/images/send.svg" width="" alt="" class="tw-px-4"></button>
                 </form>
             </div>
         </section>
