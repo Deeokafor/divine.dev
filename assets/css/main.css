@@ -47,6 +47,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#email-body {
+    resize: none;
+}
+
 /*
 #figma_logo {
     width: 30px;
@@ -89,18 +93,22 @@ html {
 
 .dee-font-xs {
     font-size: 13px;
+    line-height: 22px;
 }
 
 .dee-font-sm {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 24px;
 }
 
 .dee-font-md {
     font-size: 18px;
+    line-height: 26px;
 }
 
 .dee-font-lg {
     font-size: 20px;
+    line-height: 28px;
 }
 
 #inspiration-brittany {
