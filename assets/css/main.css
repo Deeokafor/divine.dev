@@ -111,6 +111,17 @@ html {
     line-height: 28px;
 }
 
+.dee-arrow-left::before {
+    content: '▹';
+    padding-right: 8px;
+    font-size: 16px;
+    color: rgb(121 244 219);
+}
+
+.dee-bg-fade {
+    background
+}
+
 #inspiration-brittany {
     width: 24px;
 }
